@@ -1,47 +1,176 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.7">
+  <meta charset="UTF-8">
+  <title>TD GAME V1.0</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="td_min_2.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color:#e4d8aa;">
+  <img src='zombie.png' id='zb' style='display : none' />
+  <img src='explode.png' id='exp' style='display : none' />
+  <img src='scene.png' id='sce' style='display : none' />
+  <img src='turret.png' id='trt' style='display : none' />
+  <img src='img/catnon.png' id='catnon' style='display : none' />
+  <img src='img/ok.png'  style='display : none' />
+  <img src='img/undo.png' style='display : none' />
+  <img src='img/redo.png' style='display : none' />
+  <img src='img/run.png' style='display : none' />
+  <img src='img/pause.png' style='display : none' />
+  <img src='img/upgrade.png' style='display : none' />
+  <img src='img/sell.png' style='display : none' />
+  <img src='img/restart.png' style='display : none' />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <div class="container" style="width:800px;">
+  <h1>SOME <abbr title="Designed by YIXUN WANG">FANCY TD GAME</abbr> AVAILABLE HERE</h1>
+    <div class="row" >
 
-    <title>Yixun Wang&#39;s Blog - GitHub.io by bbccyy</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Yixun Wang&#39;s Blog - GitHub.io</h1>
-        <h2>yw1514@nyu.edu</h2>
-        <a href="https://github.com/bbccyy" class="button"><small>Follow me on</small> GitHub</a>
+      <div class="col-sm-8">
+        <div id="td-board" class="relative">
+            <canvas id="td-canvas-background" class="absolute"  style="z-index: -1; pointer-events: none;">
+              Please use IE9 / Chrome / Opera </canvas>
+      			<canvas id="td-canvas" class="absolute"  style="z-index: 0;">
+              Please use IE9 / Chrome / Opera </canvas>
+            <canvas id="td-canvas-1" class="absolute"  style="z-index: 1; pointer-events: none;">
+              Please use IE9 / Chrome / Opera </canvas>
+            <canvas id="td-canvas-2" class="absolute"  style="z-index: 2; pointer-events: none;">
+              Please use IE9 / Chrome / Opera </canvas>
+      	</div>
+        <div id='pre'>
+          <div class="row" style="margin-top:20px;">
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/ok.png' id='submit'/>
+            </div>
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/undo.png' id='undo'/>
+            </div>
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/redo.png' id='redo'/>
+            </div>
+          </div>
+        </div>
+        <div id='post'>
+          <div class="row" style="margin-top:20px;">
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/run.png' id='run'/>
+              <img class='imgbottom' src='img/pause.png' id='pause'/>
+            </div>
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/upgrade.png' id='upgrade'/>
+            </div>
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/sell.png' id='sell'/>
+            </div>
+          </div>
+        </div>
+        <div id='over'>
+          <div class="row" style="margin-top:20px;">
+            <div class="col-sm-4  vertical-align"></div>
+            <div class="col-sm-4  vertical-align">
+              <img class='imgbottom' src='img/restart.png' id='restart'/>
+            </div>
+            <div class="col-sm-4  vertical-align"></div>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a id="bbccyygithubio" class="anchor" href="#bbccyygithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bbccyy.github.io</h1>
-
-<p>Wang's Blog</p>
-        </section>
-
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+      <div class="col-sm-4">
+        <div class="container-fluid" style="margin-bottom:5px; padding-left:22px; border: 3px solid #982f2f;
+    border-radius: 5px;">
+          <p id='money' style="margin-bottom: 2px;"></p>
+          <p id='wave' style="margin-bottom: 2px;">wave: 0</p>
+          <p id='score' style="margin-bottom: 2px;">score: 0</p>
+        </div>
+        <div class="container-fluid" style="margin-bottom:5px; border: 3px solid #982f2f; border-radius: 5px;">
+          <table class='table table-hover' style="margin:0px;">
+            <thead>
+              <tr>
+                <th>Weapon</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tr id='building-1'>
+              <td><img src='img/turret_01.png' data-toggle="tooltip" data-placement="top"
+                style='display : block; width : 30px; height:30px'
+                title="Name:  机枪
+Damage:  Low
+Loading Time:  Short
+Range:  Medium"/></td>
+              <td> $ 100 </td>
+            </tr>
+            <tr id='building-2'>
+              <td><img src='img/turret_02.png' data-toggle="tooltip" data-placement="top"
+                style='display : block; width : 30px; height:30px'
+                title="Name:  速射炮
+Damage:  Medium
+Loading Time:  Medium
+Range:  Short"/></td>
+              <td> $ 200 </td>
+            </tr>
+            <tr id='building-3'>
+              <td><img src='img/turret_03.png' data-toggle="tooltip" data-placement="top"
+                style='display : block; width : 30px; height:30px'
+                title="Name:  加农炮
+Damage:  High
+Loading Time:  Long
+Range:  Medium"/></td>
+              <td> $ 400 </td>
+            </tr>
+            <tr id='building-4'>
+              <td><img src='img/turret_04.png' data-toggle="tooltip" data-placement="top"
+                style='display : block; width : 30px; height:30px'
+                title="Name:  镭射电浆炮
+Damage:  Low
+Loading Time:  None
+Range:  Short"/></td>
+              <td> $ 700 </td>
+            </tr>
+            <tr id='building-6'>
+              <td><img src='img/turret_06.png' data-toggle="tooltip" data-placement="top"
+                style='display : block; width : 30px; height:30px'
+                title="Name:  猫猫飞弹发射器
+Damage:  High
+Loading Time:  Long
+Range:  Long"/></td>
+              <td> $ 1000 </td>
+            </tr>
+          </table>
+        </div>
+        <div class="container-fluid" style="margin-bottom:5px; border: 3px solid #982f2f; border-radius: 5px;">
+          <div class="panel-body" style="padding:0px; padding-left:10px;">
+            <dl  class="dl-horizontal" id ="info" style="margin-bottom:0px;">
+              <dt>Level</dt> <dd> </dd>
+              <dt>Damage</dt><dd> </dd>
+              <dt>Range</dt><dd> </dd>
+              <dt>Shot delay</dt><dd> </dd>
+              <dt>Live</dt><dd> </dd>
+              <dt>Upgrade cost</dt><dd> </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="container-fluid" style=" border: 3px solid #982f2f; border-radius: 5px;">
+          <cite>How about design your map? well, don't forget to link two terminals :)</cite>
+        </div>
       </div>
+
     </div>
+  </div>
 
-  
-  </body>
+<script>
+  window.onload = function () {
+  		_TD.init();
+  };
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+</body>
 </html>
