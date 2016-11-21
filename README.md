@@ -46,23 +46,39 @@
 
 ## 开源项目和作品
 
-### 网页应用: 可多人参与社交游戏（跳棋） 2014-10
-**Key words: Javascript, HTML, CSS, AngularJS, Jasmine, PhoneGap**
+### *网页应用: 可多人参与社交游戏（跳棋） 2014-10*
+Key words: **Javascript, HTML, CSS, AngularJS, Jasmine, PhoneGap**
 - 独立完成了中国跳棋游戏逻辑和UI的编写和单元测试
 - 参与了游戏客户端平台的开发，负责部分功能的实现（Facebook登陆，匹配对手，数据统计等），使用PhoneGap将游戏封装并发布到安卓应用市场
 - [DEMO](https://bbccyy.github.io/demoChineseChecker/game.html)
 
-### 基于笔画输入的三维画像生成系统 2013-05
-**Key words: C++, OpenGL**
-- 设计并开发了[三维画像生成系统](https://github.com/bbccyy/SketchBasedAnimation)，该应用将用户的二维笔画输入作为三维图像外形，通过实现填充，拉伸，切割和描绘等辅助功能来丰富图像细节
- - ![Step 1](https://cloud.githubusercontent.com/assets/8743900/20471245/12b2a6fc-afeb-11e6-8e11-0cefd48dbf59.png)
- - ![Step 2](https://cloud.githubusercontent.com/assets/8743900/20471247/14a36bfe-afeb-11e6-834d-216072914225.png)
- - ![Step 3](https://cloud.githubusercontent.com/assets/8743900/20471248/18439c98-afeb-11e6-90a4-0c17e57e6fa4.png)
 
-### 体育新闻关键信息提取系统
-**Key words: Java, JET**
+### *基于笔画输入的三维画像生成系统 2013-05*
+Key words: **C++, OpenGL**
+- 设计并开发了[三维画像生成系统](https://github.com/bbccyy/SketchBasedAnimation)，该应用将用户的二维笔画输入作为三维图像外形，通过实现填充，拉伸，切割和描绘等辅助功能来丰富图像细节
+- ![Step 1](https://cloud.githubusercontent.com/assets/8743900/20471245/12b2a6fc-afeb-11e6-8e11-0cefd48dbf59.png)
+- ![Step 2](https://cloud.githubusercontent.com/assets/8743900/20471247/14a36bfe-afeb-11e6-834d-216072914225.png)
+- ![Step 3](https://cloud.githubusercontent.com/assets/8743900/20471248/18439c98-afeb-11e6-90a4-0c17e57e6fa4.png)
+
+### *体育新闻关键信息提取系统  2015-02*
+Key words: **Java, JET**
 - 在学习自然语言处理的过程中编写了此[信息提取工具](ttps://github.com/bbccyy/Nature_Language_Process-NBA-game-reports-extractor-)，使用了JET（Java Extraction Tool）帮助分解词句。
 - 系统先分析输入的新闻文档，经模式匹配并生成关键词列表，对NBA新闻的总体正确率可达95%
+
+
+### *网页应用: 基于Google AppEngine建立的个人主页 2016-02*
+Key words: **Python, Javascript, Bootstrap, Jinja2, Google App Engine, CKEditor, colorBox**
+- 学习并运用Phthon编写了一个包含问答和投票功能的类似Stack Overflow的论坛服务器端逻辑，学习并运用Jinjia2和Bootstrap完成前端页面的设计
+- 个人主页中搭建了相册系统，支持相册管理，本地上传，使用了Google的NDB作为数据存储中心
+- 个人主页中还搭建了博客系统，支持基本博客管理操作，支持文档和关键词查询，支持富文本编辑
+- [个人主页](http://glassjar-home.appspot.com/)
+- [技术博客](http://glassjar-blog.appspot.com/) （欢迎挂代理来逛逛，里面有我的博文）
+
+
+### *分布式系统实验  2015-10*
+Key words: **Go, Multithread**
+- 针对基于RPC和键值设计的分布式服务器系统，在仿真模拟的网络环境下验证了多种理论与技术，使得服务器能保证每条RPC至多一次执行，并且能从Master服务器当机条件下完成恢复
+- 用Go编写了简易的Map-Reduce库函数，并实现了多线程下对圣经等文本文档词汇数量的统计
 
 
 ## 开源项目
