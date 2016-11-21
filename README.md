@@ -8,7 +8,7 @@
 - 手机：13776011651
 - Email： zoj2005@hotmail.com 或 yw1514@nyu.edu
 - QQ：348482276
-- 技术博客：glassjar-blog.appspot.com(可能需代理)
+- 技术博客：http://glassjar-blog.appspot.com (可能需代理)
 - Github：http://github.com/bbccyy
 - 期望城市：北京
 
