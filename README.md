@@ -1,8 +1,9 @@
 
 纽约大学应届计算机科学研究生求职简历
+
 ===
 
-# 个人信息 & 联系方式
+## 个人信息 & 联系方式
 
 - 王易循/男/1986-06
 - 手机：13776011651
@@ -12,11 +13,9 @@
 - Github：http://github.com/bbccyy
 - 期望城市：北京
 
-
-
 ---
 
-# 工作经历
+## 工作经历
 
 ### SESS三星半导体 （ 2010年5月 ~ 2011年8月 ）
 
@@ -26,24 +25,39 @@
 
 ---
 
-# 教育和学术经历
+## 教育和学术经历
 
-### 纽约大学（文理学院）
+### 纽约大学（文理研究生院）   2014-02 ～ 2016-02
 - 学位：计算机科学硕士学位
 - 成绩：GPA （3.75/4.0）
 
-### 石溪大学（电子电气工程学院)
+### 石溪大学（电子电气工程学院)    2011-09 ～ 2013-05
 - 学位：电子工程硕士学位
 - 成绩：GPA （3.69/4.0）
 
-### 苏州大学（物理科学学院）
+### 苏州大学（物理科学学院）   2005-09 ～ 2009-05
 - 学位： 光信息科学与技术学士学位
-- 成绩： GPA （3.37/5.0）
+- 成绩： GPA （3.37/4.0）
+
+### 科研论文   2010-05
+- Wang Yixun, Zhao Xunjie, Improving Algorithm of K-Means-Based Clustering Segmentation of Color Image. Computer Application and Software 2010: 27 (8)
 
 ---
 
-# 开源项目和作品
-（这一段用于放置工作以外的、可证明你的能力的材料）
+## 开源项目和作品
+
+### 网页应用: 可多人参与社交游戏（跳棋） 2014-10
+**Key words: Javascript, HTML, CSS, AngularJS, Jasmine, PhoneGap**
+- 独立完成了中国跳棋游戏逻辑和UI的编写和单元测试
+- 参与了游戏客户端平台的开发，负责部分功能的实现（Facebook登陆，匹配对手，数据统计等），使用PhoneGap将游戏封装并发布到安卓应用市场
+- [DEMO](https://bbccyy.github.io/demoChineseChecker/game.html)
+
+### 基于笔画输入的三维画像生成系统（sketch based animation） 2013-05
+**Key words: C++, OpenGL**
+- 设计并开发了[三维画像生成系统](https://github.com/bbccyy/SketchBasedAnimation)，该应用将用户的二维笔画输入作为三维图像外形，通过实现填充，拉伸，切割和描绘等辅助功能来丰富图像细节
+- ![Step 1](https://cloud.githubusercontent.com/assets/8743900/20471245/12b2a6fc-afeb-11e6-8e11-0cefd48dbf59.png)
+- ![Step 2](https://cloud.githubusercontent.com/assets/8743900/20471247/14a36bfe-afeb-11e6-834d-216072914225.png)
+- ![Step 3](https://cloud.githubusercontent.com/assets/8743900/20471248/18439c98-afeb-11e6-90a4-0c17e57e6fa4.png)
 
 ## 开源项目
 （对于程序员来讲，没有什么比Show me the code能有说服力了）
