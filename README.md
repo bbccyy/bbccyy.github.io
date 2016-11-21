@@ -1,6 +1,5 @@
 
 纽约大学应届计算机科学研究生求职简历
-
 ===
 
 ## 个人信息 & 联系方式
@@ -79,6 +78,14 @@ Key words: **Python, Javascript, Bootstrap, Jinja2, Google App Engine, CKEditor,
 Key words: **Go, Multithread**
 - 针对基于RPC和键值设计的分布式服务器系统，在仿真模拟的网络环境下验证了多种理论与技术，使得服务器能保证每条RPC至多一次执行，并且能从Master服务器当机条件下完成恢复
 - 用Go编写了简易的Map-Reduce库函数，并实现了多线程下对圣经等文本文档词汇数量的统计
+
+
+### *网络爬虫 + 应用推荐系统 + 迷你应用商城  2015-11*
+Key words: **Java, Jsoup, Multithread, Mongodb, Spring-MVC, Hibernate, MySQL, Tomcat, AngluarJS**
+- 基于Java和Jsoup编写了[网络爬虫程序](https://github.com/bbccyy/WebCrawler)，该爬虫支持多线程并发操作
+- 完成了[应用推荐系统](https://github.com/bbccyy/AppRecommender)作为爬虫获取信息的后续加工操作，系统使用Mongodb存取和写入数据，利用余弦相似性计算推荐应用
+- 建立了类似于谷歌应用商城的迷你商城
+- [商城DEMO](http://bittigerx-java-appstore.herokuapp.com/)
 
 
 ## 开源项目
