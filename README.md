@@ -40,7 +40,7 @@
 - 成绩： GPA （3.37/4.0）
 
 ### 科研论文   2010-05
-- Wang Yixun, Zhao Xunjie, Improving Algorithm of K-Means-Based Clustering Segmentation of Color Image. Computer Application and Software 2010: 27 (8)
+- [Wang Yixun, Zhao Xunjie, Improving Algorithm of K-Means-Based Clustering Segmentation of Color Image. Computer Application and Software 2010: 27 (8)](http://www.cas.stc.sh.cn/admin/qikan_zhaiyao_cx0.asp?ID=13735&page=1)
 
 ---
 
@@ -52,12 +52,18 @@
 - 参与了游戏客户端平台的开发，负责部分功能的实现（Facebook登陆，匹配对手，数据统计等），使用PhoneGap将游戏封装并发布到安卓应用市场
 - [DEMO](https://bbccyy.github.io/demoChineseChecker/game.html)
 
-### 基于笔画输入的三维画像生成系统（sketch based animation） 2013-05
+### 基于笔画输入的三维画像生成系统 2013-05
 **Key words: C++, OpenGL**
 - 设计并开发了[三维画像生成系统](https://github.com/bbccyy/SketchBasedAnimation)，该应用将用户的二维笔画输入作为三维图像外形，通过实现填充，拉伸，切割和描绘等辅助功能来丰富图像细节
-- ![Step 1](https://cloud.githubusercontent.com/assets/8743900/20471245/12b2a6fc-afeb-11e6-8e11-0cefd48dbf59.png)
-- ![Step 2](https://cloud.githubusercontent.com/assets/8743900/20471247/14a36bfe-afeb-11e6-834d-216072914225.png)
-- ![Step 3](https://cloud.githubusercontent.com/assets/8743900/20471248/18439c98-afeb-11e6-90a4-0c17e57e6fa4.png)
+ - ![Step 1](https://cloud.githubusercontent.com/assets/8743900/20471245/12b2a6fc-afeb-11e6-8e11-0cefd48dbf59.png)
+ - ![Step 2](https://cloud.githubusercontent.com/assets/8743900/20471247/14a36bfe-afeb-11e6-834d-216072914225.png)
+ - ![Step 3](https://cloud.githubusercontent.com/assets/8743900/20471248/18439c98-afeb-11e6-90a4-0c17e57e6fa4.png)
+
+### 体育新闻关键信息提取系统
+**Key words: Java, JET**
+- 在学习自然语言处理的过程中编写了此[信息提取工具](ttps://github.com/bbccyy/Nature_Language_Process-NBA-game-reports-extractor-)，使用了JET（Java Extraction Tool）帮助分解词句。
+- 系统先分析输入的新闻文档，经模式匹配并生成关键词列表，对NBA新闻的总体正确率可达95%
+
 
 ## 开源项目
 （对于程序员来讲，没有什么比Show me the code能有说服力了）
